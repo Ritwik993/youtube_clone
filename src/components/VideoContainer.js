@@ -20,7 +20,7 @@ const VideoContainer = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
 
   return !isMenuOpen ? (
-    <div className=" grid md:grid-cols-4 lg:grid-cols-5 gap-4 m-4">
+    <div className=" grid m-4 grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {videos.map((video) => {
         return (
           <Link to={"/watch?v=" + video.id} key={video.id}>

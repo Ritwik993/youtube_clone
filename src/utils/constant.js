@@ -1,4 +1,4 @@
-const API_KEY="AIzaSyA7V0v4UEQqQh0iZewwd3SXAF2XjGmZydU";
+const API_KEY="AIzaSyAc90s2gR8Lcx3PboGnzp2dq4h-YH_Kx6o";
 
 export const YOUTUBE_SEARCH_API="http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 export const YOUTUBE_URL="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&videoCategoryId=0&maxResults=50&regionCode=IN&key="+API_KEY;

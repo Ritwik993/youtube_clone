@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { toogleMenu } from "../utils/appSlice";
 import { YOUTUBE_SEARCH_API } from "../utils/constant";
 import { cacheResults } from "../utils/searchSlice";
-import store from "../utils/store";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { updateData } from "../utils/videoSearchSlice";
@@ -89,7 +88,7 @@ const Head = () => {
                 .filter((s) => {
                   const VALUE = value.toLowerCase();
                   const SEARCH = searchText.toLowerCase();
-                  return VALUE != SEARCH;
+                  return VALUE !== SEARCH;
                 })
                 .map((s) => {
                   return (
